@@ -1,0 +1,163 @@
+/*Estilat sobre elements HTML */
+body {
+ font-family: 'Roboto', sans-serif;
+    color:red;
+}
+h1,
+h2,
+h3,
+h4 {
+ font-family: 'Roboto Slab', sans-serif;
+ letter-spacing: 1px;
+}
+p {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 0.9em;
+}
+a {
+ text-decoration: none;
+}
+nav {
+ margin: 5px;
+ padding: 5px;
+ /*mostrar*/
+ border: 1px solid red;
+}
+/*Classes Contenidors */
+.contenidor {
+ width: 75%;
+ margin: 10px auto 50px auto;
+ /*mostrar*/
+ border: 1px solid red;
+}
+.contenidor-xxss {
+ margin: 5px;
+ padding: 5px;
+ text-align: right;
+ box-sizing: border-box;
+ /*mostrar*/
+ border: 1px solid red;
+}
+.contenidor-flex {
+ margin: 5px;
+ padding: 5px;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ flex-wrap: wrap;
+ /*mostrar*/
+ border: 1px solid red;
+}
+.contenidor-imatge {
+ margin: 5px;
+ padding: 5px;
+ /*mostrar*/
+ border: 1px dashed red;
+}
+.contenidor-text {
+ margin: 5px;
+ padding: 10px;
+ /*mostrar*/
+ border: 1px solid red;
+ border-radius:5px;
+}
+.contenidor-footer {
+ position: fixed;
+ bottom: 0%;
+ left: 0%;
+ padding: 5px 24px;
+ background-color: rgba(255, 255, 255, 0.7);
+ width: 100%;
+ font-size: 12px;
+ font-weight: 400;
+}
+/*Classes botons*/
+.boto-flex {
+ flex: 1 150px;
+ padding: 12px;
+ color: black;
+ border-radius: 5px;
+ border: 1px solid red;
+ margin: 5px;
+ text-align: center;
+    color:red;
+}
+.boto-flex:hover {
+ background-color: tomato;
+ color: white;
+}
+.fa-instagram,
+.fa-behance {
+ font-size: 1.5em;
+ margin: 5px;
+}
+.fa-instagram:hover,
+.fa-behance:hover {
+ color: tomato;
+}
+.links {
+ color: tomato;
+}
+.links:hover {
+ color: tomato;
+ border-bottom: 1px solid tomato;
+}
+.actiu {
+ background-color: white;
+}
+/*Classes imatges*/
+.imatge1 {
+ width: 100%;
+}
+.imatge2 {
+ display: none;
+}
+@media only screen and (max-width: 500px) {
+ .imatge1 {
+ display: none;
+ }
+ .imatge2 {
+ width: 100%;
+ display: block;
+ width: 100%;
+ }
+}
+/*Classes Slider*/
+.container-slider {
+ width: 75%;
+ margin: auto;
+ border: 1px solid red;
+ box-sizing: border-box;
+ text-align: center;
+}
+.container-display {
+ position: relative;
+ width: 98%;
+ /*indicador*/
+ margin: 5px;
+ border: 1px dashed red;
+}
+.boton-slider {
+ width: 30px;
+ height: 30px;
+ background-color: grey;
+}
+.boton-slider:hover {
+ width: 30px;
+ height: 30px;
+}
+.fletxaDreta-slider {
+ position: absolute;
+ top: 50%;
+ left: 0%;
+ transform: translate(0%, -50%);
+ */
+}
+.fletxaEsquerra-slider {
+ position: absolute;
+ top: 50%;
+ right: 0%;
+ transform: translate(0%, -50%);
+}

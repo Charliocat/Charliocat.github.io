@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Charlio Portfoli</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-
+         lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link rel="stylesheet" href="../css/style.css">
+   </head>
+   <style>
+      .mySlides {
+      display: none;
+      }
+   </style>
+   <body>
+      <div class="contenidor">
+         <div class="contenidor-xxss">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+         </div>
+         <nav>
+            <h1>Mostra de Treballs</h1>
+         </nav>
+         <div class="contenidor-flex">
+            <a href="../index.html" class="boto-flex">Inici</a>
+            <a href="cv.html" class="boto-flex">Currículum</a>
+            <a href="slider.html" class="boto-flex actiu">Mostra de feines</a>
+            <a href="#" class="boto-flex">Contacte</a>
+         </div>
+         <div class="container-display">
+            <img class="mySlides" src="../imatges/imatgep1.jpeg" style="width:100%">
+            <img class="mySlides" src="../imatges/imatgep2.jpeg" style="width:100%">
+            <img class="mySlides" src="../imatges/imatgep3.jpeg" style="width:100%">
+            <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+         </div>
+         <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+            slideIndex = 1
+            }
+            if (n < 1) {
+            slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+            }
+         </script>
+         <div class="contenidor-text">Aquesta és una mostra de les meves feines més representatives durant el <strong>Cicle Formatiu
+            d'Animacions 3D, Jocs i Entorns Interactius</strong>. També em podeu seguir a través de les meves xarxes socials <a class="links"
+               href="http:/www.instagram.com">Intagram</a> i <a class="links href=" http:/www.behance.net">Behance" </a> 
+         </div>
+      </div>
+      </div>
+      <div class="contenidor-footer">Charlio cat · Tlf: 123 456 479 · hola@charlio.cat </div>
+      </div>
+   </body>
+</html>
